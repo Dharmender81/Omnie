@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+	<title>forgot password</title>
+	<style type="text/css">
+		body{
+			font-family: Crimson+Pro,serif;
+			color:  white;
+			background-image: url(D:/Userlogin/zzz.jpeg);
+			background-size: cover;
+			
+
+		}
+		a{
+			color: yellow;
+			text-decoration: blink;
+			font-family: Crimson+Pro,serif;
+			margin-left: 60px;
+			
+
+
+		}
+		a:hover{
+			color: orange;
+		}
+		.forget{
+			background: rgba(44,62,80,0);
+			padding: 40px;
+			width: 240px;
+			height: 340px;
+			margin-left: 180px;
+			margin:0 auto;
+			margin-top: 120px;
+		}
+		input[type=text]{
+			width: 240px;
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid #fff;
+			font-family: Crimson+Pro,serif;
+			font-size: 16px;
+			font-weight: 200px;
+			padding: 10px 0;
+			transition: border 0.5s;
+			text-align: center;
+
+		}
+		input[type=button]{
+			border: none;
+			background:white;
+			color: black;
+			font-size: 16px;
+			line-height: 25px;
+			padding: 10px 0;
+			border-radius: 12px;
+			cursor: pointer;
+			width: 180px;
+			margin-left: 30px;
+
+		}
+			input[type=button]:hover{
+				background: black;
+				color: white;
+				opacity: 0.8;
+			}
+			::placeholder{
+			color: aliceblue;
+			opacity: 0.8;
+		}
+
+	</style>
+</head>
+<body>
+<div class="forget">
+	<form>
+		<h2 align="center" style="color: #fff">Forget Password</h2>
+		<h5 style="font-size: 14px; color:  #ffff99;">Enter email here that you used on your account.We send link on your email to reset your password.</h5>
+		<input type="text" name="username" placeholder="Enter your Email"><br><br>
+		<input type="button" value="send" id="btn" onclick="click()"><br><br>
+		<a href="loginform.html" style="text-decoration: none; text-align: center;" >Goto user login</a><br><br>  
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script type="text/javascript">
+{
+
+ let btn=document.getElementById("btn");
+ 	btn.addEventListener("click",function(){
+ 		swal("Thank you!", " Email send succesfully!", "success");
+ 	})
+ 	
+    }      
+</script>
+	</form>
+	
+</div>
+</body>
+</html>

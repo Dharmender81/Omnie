@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reset password</title>
+	<style type="text/css">
+		body{
+			font-family: Crimson+Pro,serif;
+			color:  white;
+			background-image: url(D:/Userlogin/zzz.jpeg);
+			background-size: cover;
+			
+
+		}
+		a{
+			color: yellow;
+			text-decoration: blink;
+			font-family: Crimson+Pro,serif;
+			margin-left: 70px;
+			text-align: center;
+
+
+		}
+		a:hover{
+			color: orange;
+		}
+		.reset{
+			background: rgba(44,62,80,0);
+			padding: 40px;
+			width: 240px;
+			height: 340px;
+			margin-left: 180px;
+			margin:0 auto;
+			margin-top: 120px;
+		}
+		h2{
+			margin-top: 15px;
+			margin-left: 10px;
+
+		}
+		input[type=password]{
+			width: 240px;
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid #fff;
+			font-family: Crimson+Pro,serif;
+			font-size: 16px;
+			font-weight: 200px;
+			padding: 10px 0;
+			transition: border 0.5s;
+			text-align: center;
+
+		}
+		input[type=button]{
+			border: none;
+			background:white;
+			color: black;
+			font-size: 16px;
+			line-height: 25px;
+			padding: 10px 0;
+			border-radius: 12px;
+			cursor: pointer;
+			width: 180px;
+			margin-left: 30px;
+
+		}
+			input[type=button]:hover{
+				background: black;
+				color: white;
+				opacity: 0.8;
+			}
+			::placeholder{
+			color: aliceblue;
+			opacity: 0.8;
+		}
+	</style>
+</head>
+<body>
+	<div class=reset>
+		
+		<form>
+			<h2 align="center" style="color: #fff;">Reset Password</h2>
+			<input type="password" name="username" placeholder="Old Password"/><br/><br/>
+			<input type="password" name="username" placeholder="New Password"/><br/><br/>
+			<input type="password" name="username" placeholder="Confirm New Password"/><br/><br/>
+			<input type="button" value="save" onclick="click()"><br><br>
+			<a href="loginform.html" style="text-decoration:none;">Goto User login</a> 
+				<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script type="text/javascript">
+{
+
+ let btn=document.getElementById("btn");
+ 	btn.addEventListener("click",function(){
+ 		swal("Thank you!", " Reset Password succesfully!", "success");
+ 	})
+ 	
+    }      
+</script>
+		</form>
+	</div>
+
+</body>
+</html>

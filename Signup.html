@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+
+
+          
+	<title>SignUp</title>
+	<style type="text/css">
+		
+		body{
+			font-family: Crimson+Pro,serif;
+			color:  white;
+			background-image: url(D:/Userlogin/zzz.jpeg);
+			background-size: cover;
+			
+		}
+		.SignUp{
+			background: rgba(44,62,80,0);
+			padding: 40px;
+			width: 250px;
+			height: 430px;
+			margin-top: 70px;
+			margin-left: 180px;
+			margin: 0 auto;
+			margin-top: 70px;
+			border-radius: 20px;
+
+		}
+		form{
+			width: 240px;
+			text-align: center; 
+		}
+		input{
+			width: 240px;
+			text-align: center;
+			background:transparent;
+			border:none;
+			border-bottom: 1px solid #fff;
+		font-family: Crimson+Pro,serif;
+		font-size: 16px;
+		font-weight: 200px;
+		padding: 10px 0;
+		transition: border 0.5s;
+		outline: none;
+		color: #fff;
+
+		}
+		a{
+		color: yellow;
+			text-decoration: blink;
+			font-family: Crimson+Pro,serif;
+			margin-left: 10px;
+			}
+		a:hover{
+			color: orange;
+		}
+		input[type=button]{
+			border:none;
+			width: 190px;
+			background:190px;
+			color: 	 #ffff99;
+			font-size: 16px;
+			line-height: 25px;
+			padding: 10px 0;
+			border-radius: 15px;
+			cursor: pointer;
+		}
+		input[type=button]:hover{
+			color: #fff;
+			background-color: black;
+		}
+		h2{
+			color: #000;
+		}
+		::placeholder{
+			color: aliceblue;
+			opacity: 0.8;
+		}
+		
+	
+	</style>
+</head>
+<body>
+<div class="SignUp">
+	<form>
+		<h2 style="color: #fff;">Sign Up</h2>
+		<input type="text" name="Username" placeholder="Firstname"><br><br>
+		<input type="text" name=" Username" placeholder="Lastname"><br><br>
+		<input type="password" name="pass" placeholder="Password"><br><br>
+		<input type="password" name="pass" placeholder="Confirm password"><br><br>
+		<input type="text" name="Username" placeholder="Email address"><br><br>
+		<input type="button" id="btn"  value="SignUp"  onclick="click();"><br><br>
+		<div class="msg"></div>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script type="text/javascript">
+{
+
+ let btn=document.getElementById("btn");
+ 	btn.addEventListener("click",function(){
+ 		swal("Thank you!", "you have signup succesfully!", "success");
+ 	})
+ 	
+    }      
+</script> 
+</head>
+<body>
+   
+		
+		Already have account?<a href="loginform.html">Log In</a>
+	</form>
+	
+
+
+
+</div>
+</body>
+</html>
